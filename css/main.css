@@ -64,51 +64,65 @@ body {
     background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)); }
     #sec1-landing .sec1-cover nav {
       width: 100%;
-      height: 4.5rem;
+      height: 5.7rem;
       padding: 0;
       font-family: "Montserrat", sans-serif; }
       #sec1-landing .sec1-cover nav .nav-logo {
-        margin: 0;
-        height: 4.5rem;
+        margin: 0 0 0 2.1rem;
+        padding: 1.8rem 2.1rem 0 2.1rem;
+        height: 5.7rem;
         display: block;
-        float: left; }
+        float: left;
+        font-size: 2.4rem;
+        font-weight: 600; }
       #sec1-landing .sec1-cover nav .nav-ul {
         padding: 0;
         margin: 0 2.1rem 0 0;
-        height: 4.5rem;
+        height: 5.7rem;
         float: right;
-        list-style: none;
+        list-style-type: none;
         font-size: 1.1rem; }
         #sec1-landing .sec1-cover nav .nav-ul li {
           padding: 0;
           margin: 0 2.1rem;
           display: inline-block;
           text-transform: uppercase;
-          height: 4.5rem;
+          height: 5.7rem;
           box-sizing: border-box; }
           #sec1-landing .sec1-cover nav .nav-ul li a {
-            height: 4.5rem;
+            width: 100%;
+            height: 5.7rem;
             margin: 0;
-            padding: 0;
+            padding: 3rem 0 0 0;
             text-decoration: none;
             outline: none;
             color: #fff;
             display: flex;
-            justify-content: center;
-            position: relative; }
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            transition: 0.3s; }
+            #sec1-landing .sec1-cover nav .nav-ul li a:hover {
+              color: #fce38a; }
+              #sec1-landing .sec1-cover nav .nav-ul li a:hover p.underline {
+                width: 100%; }
             #sec1-landing .sec1-cover nav .nav-ul li a i {
               font-size: 1.4rem;
               display: block;
               margin: 0;
               padding: 0; }
             #sec1-landing .sec1-cover nav .nav-ul li a p {
+              margin: 0;
+              padding: 0; }
+            #sec1-landing .sec1-cover nav .nav-ul li a p.underline {
               display: block;
-              position: absolute;
               text-align: center;
-              bottom: 0;
-              height: 0.2rem;
-              width: 1rem;
-              background-color: black; }
+              height: 0.25rem;
+              width: 0;
+              background-color: #fce38a;
+              transition: 0.3s;
+              margin-top: 0.7rem; }
 
 #sec2-about {
   width: 100%;
