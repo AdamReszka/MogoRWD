@@ -45,4 +45,74 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff; }
+
+#sec1-landing {
+  width: 100%;
+  background-image: url("../images/sec1-main-photo.png");
+  background-size: cover;
+  background-position: center; }
+  #sec1-landing .sec1-cover {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)); }
+    #sec1-landing .sec1-cover nav {
+      width: 100%;
+      height: 4.5rem;
+      padding: 0;
+      font-family: "Montserrat", sans-serif; }
+      #sec1-landing .sec1-cover nav .nav-logo {
+        margin: 0;
+        height: 4.5rem;
+        display: block;
+        float: left; }
+      #sec1-landing .sec1-cover nav .nav-ul {
+        padding: 0;
+        margin: 0 2.1rem 0 0;
+        height: 4.5rem;
+        float: right;
+        list-style: none;
+        font-size: 1.1rem; }
+        #sec1-landing .sec1-cover nav .nav-ul li {
+          padding: 0;
+          margin: 0 2.1rem;
+          display: inline-block;
+          text-transform: uppercase;
+          height: 4.5rem;
+          box-sizing: border-box; }
+          #sec1-landing .sec1-cover nav .nav-ul li a {
+            height: 4.5rem;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            position: relative; }
+            #sec1-landing .sec1-cover nav .nav-ul li a i {
+              font-size: 1.4rem;
+              display: block;
+              margin: 0;
+              padding: 0; }
+            #sec1-landing .sec1-cover nav .nav-ul li a p {
+              display: block;
+              position: absolute;
+              text-align: center;
+              bottom: 0;
+              height: 0.2rem;
+              width: 1rem;
+              background-color: black; }
+
+#sec2-about {
+  width: 100%;
+  height: 30rem;
+  background-color: green; }
+
 /*# sourceMappingURL=main.css.map */

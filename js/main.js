@@ -1,5 +1,9 @@
 $(document).ready(initAll);
 
 function initAll() {
-  console.log('js was started');
+  setHeight();
+}
+
+function setHeight() {
+  $('#sec1-landing').height($(window).innerHeight());
 }
