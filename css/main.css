@@ -123,6 +123,25 @@ body {
               background-color: #fce38a;
               transition: 0.3s;
               margin-top: 0.7rem; }
+    #sec1-landing .sec1-cover .title-cont {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 8.2% 0 0 0; }
+      #sec1-landing .sec1-cover .title-cont p.top-title {
+        margin: 0;
+        padding: 0;
+        font-family: "Kaushan Script", cursive;
+        font-size: 5.8rem; }
+      #sec1-landing .sec1-cover .title-cont p.main-title {
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 12rem;
+        max-width: 80rem;
+        text-align: center;
+        margin: 3.3rem 0 0 0;
+        line-height: 11.2rem; }
 
 #sec2-about {
   width: 100%;
