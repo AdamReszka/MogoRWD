@@ -10,5 +10,5 @@ function setHeight() {
 }
 
 function startParallax() {
-  $('.parallax-window').parallax({imageSrc: '../images/sec1-main-photo.png'});
+  $('.parallax-window').parallax({imageSrc: 'images/sec1-main-photo.png'});
 }
