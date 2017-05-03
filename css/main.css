@@ -257,8 +257,7 @@ body {
       width: 38rem;
       height: 25rem;
       background-color: #95e1d3;
-      position: relative;
-      overflow: hidden; }
+      position: relative; }
       #sec2-about .about-photos .photo-cont .photo-item {
         display: flex;
         position: relative;
@@ -267,7 +266,8 @@ body {
         outline: none;
         text-decoration: none;
         color: #fff;
-        transition: 0.2s; }
+        transition: 0.2s;
+        overflow: hidden; }
         #sec2-about .about-photos .photo-cont .photo-item .photo-cover {
           width: 100%;
           height: 100%;
