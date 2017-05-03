@@ -127,7 +127,7 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin: 8.2% 0 0 0; }
+      margin: 7% 0 0 0; }
       #sec1-landing .sec1-cover .title-cont p.top-title {
         margin: 0;
         padding: 0;
@@ -142,6 +142,29 @@ body {
         text-align: center;
         margin: 3.3rem 0 0 0;
         line-height: 11.2rem; }
+      #sec1-landing .sec1-cover .title-cont p.div-bar {
+        width: 5rem;
+        height: 0.3rem;
+        background-color: #fff;
+        margin: 4.5rem 0 0 0; }
+      #sec1-landing .sec1-cover .title-cont .main-button {
+        display: block;
+        box-sizing: border-box;
+        width: 12.8rem;
+        height: 3rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 5rem 0 0 0;
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        padding: 0.7rem 0 0 0; }
+        #sec1-landing .sec1-cover .title-cont .main-button:hover {
+          color: #fff;
+          background-color: #fff; }
 
 #sec2-about {
   width: 100%;

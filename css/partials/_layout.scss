@@ -1,27 +1,24 @@
-html {
+html{
   font-size: 62.5%;
 }
-body {
+body{
   @include zero;
   color: #fff;
 }
-// * {
-//   box-sizing: border-box;
-// }
-#sec1-landing {
+#sec1-landing{
   width: 100%;
   background-image: url('../images/sec1-main-photo.png');
   background-size: cover;
   background-position: center;
-  .sec1-cover {
+  .sec1-cover{
     @include parentSize;
     background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-    nav {
+    nav{
       width: 100%;
       height: $navH;
       padding: 0;
       font-family: $mont;
-      .nav-logo {
+      .nav-logo{
         margin: 0 0 0 2.1rem;
         padding: 2.2rem 2.1rem 0 2.1rem;
         height: $navH;
@@ -37,14 +34,14 @@ body {
         float: right;
         list-style-type: none;
         font-size: 1.1rem;
-        li {
+        li{
           padding: 0;
           margin: 0 2.1rem;
           display: inline-block;
           text-transform: uppercase;
           height: $navH;
           box-sizing: border-box;
-          a {
+          a{
             width: 100%;
             height: $navH;
             margin: 0;
@@ -60,11 +57,11 @@ body {
             transition: 0.3s;
             &:hover{
               color: $mogoyellow;
-              p.underline {
+              p.underline{
                 width: 100%;
               }
             }
-            i {
+            i{
               font-size: 1.4rem;
               display: block;
               @include zero;
@@ -88,7 +85,7 @@ body {
     }
     .title-cont{
       @include dircol;
-      margin: 8.2% 0 0 0;
+      margin: 7% 0 0 0;
       p.top-title{
         margin: 0;
         padding: 0;
@@ -104,6 +101,36 @@ body {
         text-align: center;
         margin: 3.3rem 0 0 0;
         line-height: 11.2rem;
+      }
+      p.div-bar{
+        width: 5rem;
+        height: 0.3rem;
+        background-color: #fff;
+        margin: 4.5rem 0 0 0;
+      }
+      .main-button{
+        display: block;
+        box-sizing: border-box;
+        width: 12.8rem;
+        height: 3rem;
+        font-family: $mont;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 5rem 0 0 0;
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        padding: 0.7rem 0 0 0;
+        &:hover{
+          color: #fff;
+          background-color: #fff;
+          // -moz-text-fill-color: transparent;
+          // -moz-background-clip: text;
+          // -webkit-text-fill-color: transparent;
+          // -webkit-background-clip: text;
+        }
       }
     }
 
