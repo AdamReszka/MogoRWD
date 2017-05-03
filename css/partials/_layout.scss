@@ -210,6 +210,118 @@ body{
 }
 #sec2-about {
   width: 100%;
-  height: 80rem;
+  min-height: 75.3rem;
   background-color: #fff;
+  @include dircol;
+  color: #000;
+  .top-title{
+    font-family: $kaushan;
+    font-size: $toptitle;
+    margin: 9.4rem 0 0 0;
+  }
+  .main-title{
+    font-family: $mont;
+    text-transform: uppercase;
+    font-size: $maintitle;
+    font-weight: 700;
+    margin: 1.8rem 0 3.7rem 0;
+  }
+  .short-desc{
+    font-family: $roboto;
+    color: $mogogray;
+    font-size: $shortdesc;
+    max-width: 100rem;
+    text-align: center;
+    line-height: 2.4rem;
+    margin: 4.2rem 0 0 0;
+  }
+  .about-photos{
+    display: flex;
+    flex-direction: row;
+    margin: 9.7rem 0 0 0;
+    .photo-cont{
+      width: 38rem;
+      height: 25rem;
+      background-color: $mogoblue;
+      position: relative;
+      overflow: hidden;
+      .photo-item{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+        transition: 0.2s;
+        .photo-cover{
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+          opacity: 0;
+          transition: 0.2s;
+          position: relative;
+          display: flex;
+          overflow: hidden;
+        }
+        .story-logo{
+          position: absolute;
+          z-index: 999;
+          transition: 0.4s;
+          margin: auto;
+          left: auto;
+          right: auto;
+          bottom: -20rem;
+          width: 100%;
+          text-align: center;
+          @include dircol;
+          opacity: 1;
+          color: #fff;
+          .fa-rocket{
+            font-size: 5rem;
+          }
+          .fa-tablet{
+            font-size: 5rem;
+          }
+          .fa-bullhorn{
+            font-size: 5rem;
+          }
+          .story{
+            font-family: $mont;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 2rem;
+          }
+        }
+        &:hover{
+          -ms-transform: translate(-1rem,-1rem);
+          transform: translate(-1rem,-1rem);
+          .photo-cover{
+            opacity: 0.9;
+          }
+          .story-logo{
+            bottom: 9rem;
+            opacity: 1;
+          }
+        }
+      }
+      .item1{
+        background-image: url('../images/sec2-photo1-cut.png');
+      }
+      .item2{
+        background-image: url('../images/sec2-photo2-cut.png');
+      }
+      .item3{
+        background-image: url('../images/sec2-photo3-cut.png');
+      }
+    }
+    .pc-margin{
+      margin-left: 3rem;
+    }
+  }
+}
+#sec3-numbers{
+  width: 100%;
+  height: 20rem;
+  background-color: $mogoblue;
 }
