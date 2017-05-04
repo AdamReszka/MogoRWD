@@ -76,7 +76,7 @@ body{
             p.underline{
               display: block;
               text-align: center;
-              height: 0.25rem;
+              height: 0.3rem;
               width: 0;
               background-color: $mogoyellow;
               transition: 0.3s;
@@ -323,6 +323,49 @@ body{
 }
 #sec3-numbers{
   width: 100%;
-  height: 20rem;
+  height: 27rem;
   background-color: $mogoblue;
+  display: flex;
+  align-items: center;
+  .number-cont{
+    padding: 0;
+    margin: 0 auto;
+    height: 27rem;
+
+    display: flex;
+    flex-direction: row;
+    .number-item{
+      display: flex;
+      height: 27rem;
+      margin: 0;
+      width: 24rem;
+      border-right: 1px solid #d4e8e5;
+      &:first-child{
+        border-left: 1px solid #d4e8e5;
+      }
+      .item-inside{
+        margin: 7.6rem auto;
+        width: 22rem;
+        padding-top: 0.4rem;
+        display: flex;
+        @include dircol;
+        font-family: $mont;
+        color: #fff;
+        .big-num{
+          font-size: 7rem;
+          font-weight: 600;
+        }
+        .inside-desc{
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin: 1.8rem;
+        }
+      }
+    }
+  }
+}
+#sec4-services{
+  width: 100%;
+  height: 30rem;
 }
