@@ -361,6 +361,37 @@ body {
 
 #sec4-services {
   width: 100%;
-  height: 30rem; }
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #000; }
+  #sec4-services .top-title {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.4rem;
+    margin: 9.4rem 0 0 0; }
+  #sec4-services .main-title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1.8rem 0 3.7rem 0; }
+  #sec4-services .services-list {
+    width: 120rem;
+    min-height: 18rem;
+    background-color: green;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap; }
+    #sec4-services .services-list .serv-item {
+      width: 40rem;
+      margin: 0 auto;
+      height: 6rem;
+      color: #000; }
+
+#sec5-design {
+  width: 100%;
+  height: 30rem;
+  background-color: #000; }
 
 /*# sourceMappingURL=main.css.map */
