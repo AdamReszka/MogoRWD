@@ -27,6 +27,11 @@
 	align-items: center;
 	flex-direction: column;
 }
+@mixin dirrow {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
 @mixin parentSize {
   width: inherit;
   height: inherit;
