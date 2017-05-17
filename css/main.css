@@ -447,7 +447,14 @@ body {
 
 #sec5-design {
   width: 100%;
-  height: 30rem;
-  background-color: #000; }
+  min-height: 60rem;
+  background-color: #000;
+  background-image: url("../images/sec5-background.png");
+  background-position: center right;
+  background-size: 160%; }
+  #sec5-design .sec-5-cover {
+    width: 100%;
+    height: 100%;
+    background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
