@@ -420,6 +420,16 @@ body {
     border-bottom: none; }
   #sec4-services #item-team {
     border-bottom: none; }
+  @media screen and (max-width: 1260px) {
+    #sec4-services div > #item-doc {
+      border-bottom: 1px solid #c4c4c4; }
+    #sec4-services .services-list {
+      width: 80rem; } }
+  @media screen and (max-width: 850px) {
+    #sec4-services div > #item-home {
+      border-bottom: 1px solid #c4c4c4; }
+    #sec4-services .services-list {
+      width: 40rem; } }
 
 #sec5-design {
   width: 100%;
