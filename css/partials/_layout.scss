@@ -397,8 +397,23 @@ body{
       color: #000;
       display: flex;
       flex-direction: row;
+      a{
+        width: 100%;
+        height: 100%;
+        @include zero;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        &:hover .serv-icon img{
+          transform: rotate(360deg);
+        }
+      }
       .serv-icon{
         margin-top: 0.2rem;
+        img{
+          display: block;
+          transition: 0.8s;
+        }
       }
       .serv-desc{
         margin-left: 3rem;
@@ -408,6 +423,7 @@ body{
           font-size: 1.4rem;
           font-weight: 500;
           color: #000;
+          position: relative;
           p{
             margin: 0 0 1.5rem 0;
           }
@@ -420,6 +436,8 @@ body{
           line-height: 2.4rem;
         }
       }
+
+
     }
   }
   #item-photo{

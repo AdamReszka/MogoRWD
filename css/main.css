@@ -390,8 +390,21 @@ body {
       color: #000;
       display: flex;
       flex-direction: row; }
+      #sec4-services .services-list .serv-item a {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row; }
+        #sec4-services .services-list .serv-item a:hover .serv-icon img {
+          transform: rotate(360deg); }
       #sec4-services .services-list .serv-item .serv-icon {
         margin-top: 0.2rem; }
+        #sec4-services .services-list .serv-item .serv-icon img {
+          display: block;
+          transition: 0.8s; }
       #sec4-services .services-list .serv-item .serv-desc {
         margin-left: 3rem; }
         #sec4-services .services-list .serv-item .serv-desc .sd-title {
@@ -399,7 +412,8 @@ body {
           font-family: "Montserrat", sans-serif;
           font-size: 1.4rem;
           font-weight: 500;
-          color: #000; }
+          color: #000;
+          position: relative; }
           #sec4-services .services-list .serv-item .serv-desc .sd-title p {
             margin: 0 0 1.5rem 0; }
         #sec4-services .services-list .serv-item .serv-desc .sd-sub {
