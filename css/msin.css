@@ -399,24 +399,10 @@ body {
         display: flex;
         flex-direction: row; }
       #sec4-services .services-list .serv-item .serv-icon {
-        margin-top: 0.2rem;
-        position: relative; }
-        #sec4-services .services-list .serv-item .serv-icon .serv-img {
+        margin-top: 0.2rem; }
+        #sec4-services .services-list .serv-item .serv-icon img {
           display: block;
-          transition: 0.8s;
-          position: relative;
-          z-index: 40;
-          top: 0;
-          right: 0; }
-        #sec4-services .services-list .serv-item .serv-icon .serv-hover {
-          display: block;
-          transition: 0.8s;
-          position: absolute;
-          z-index: 50;
-          top: 0;
-          right: 0;
-          transition: 0.5s;
-          opacity: 0; }
+          transition: 0.8s; }
       #sec4-services .services-list .serv-item .serv-desc {
         margin-left: 3rem; }
         #sec4-services .services-list .serv-item .serv-desc .sd-title {
@@ -434,8 +420,6 @@ body {
           padding-right: 3rem;
           font-size: 1.4rem;
           line-height: 2.4rem; }
-      #sec4-services .services-list .serv-item .serv-link:hover .serv-hover {
-        opacity: 1; }
   #sec4-services #item-photo {
     border-bottom: 1px solid #c4c4c4; }
   #sec4-services #item-web {
@@ -471,4 +455,4 @@ body {
     height: 100%;
     background-color: white; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=msin.css.map */

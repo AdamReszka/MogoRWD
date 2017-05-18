@@ -4,6 +4,7 @@ function initAll() {
   setHeight();
   startParallax();
   setNumbers();
+  iconAnimating();
 }
 
 function setHeight() {
@@ -27,6 +28,15 @@ function setNumbers() {
   });
 }
 
+function iconAnimating() {
+  $('.serv-link').hover(function(){
+    $(this).find('.serv-icon').addClass('bounce');
+  });
+  $('.serv-link').mouseleave(function(){
+    $(this).find('.serv-icon').removeClass('bounce');
+  });
+
+}
 
 
 

@@ -404,15 +404,27 @@ body{
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        &:hover .serv-icon img{
-          transform: rotate(360deg);
-        }
       }
       .serv-icon{
         margin-top: 0.2rem;
-        img{
+        position: relative;
+        .serv-img{
           display: block;
           transition: 0.8s;
+          position: relative;
+          z-index: 40;
+          top: 0;
+          right: 0;
+        }
+        .serv-hover{
+          display: block;
+          transition: 0.8s;
+          position: absolute;
+          z-index: 50;
+          top: 0;
+          right: 0;
+          transition: 0.5s;
+          opacity: 0;
         }
       }
       .serv-desc{
@@ -436,7 +448,9 @@ body{
           line-height: 2.4rem;
         }
       }
-
+      .serv-link:hover .serv-hover{
+        opacity: 1;
+      }
 
     }
   }
