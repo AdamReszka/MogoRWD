@@ -540,7 +540,7 @@ body{
 
 #sec6-whatwedo{
   width: 100%;
-  height: 40rem;
+  min-height: 40rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -559,7 +559,7 @@ body{
     margin: 1.8rem 0 3.7rem 0;
   }
   .what-desc{
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 7rem 0;
     width: 120rem;
     font-family: $roboto;
     color: $mogogray;
@@ -567,4 +567,103 @@ body{
     line-height: 2.4rem;
     text-align: center;
   }
+  .service-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+    .service-pic{
+      width: 60rem;
+      margin: 1.6rem;
+      height: 38rem;
+      background-image: url('../images/sec6-image-cut.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .service-dropdown{
+      width: 60rem;
+      height: 38rem;
+      background-color: #000;
+      margin: 1.6rem;
+      #sd-photography{
+        height: 24rem;
+        margin-bottom: 1rem;
+      }
+      #sd-creativity{
+        height: 6rem;
+        margin-bottom: 1rem;
+      }
+      #sd-web-design{
+        height: 6rem;
+      }
+      .sd-dropcont{
+        width: 100%;
+        overflow: hidden;
+        background-color: green;
+        .sd-header{
+          width: 100%;
+          height: 6rem;
+          background-color: red;
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          .sd-logo{
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            img{
+              margin: auto;
+              display: block;
+            }
+          }
+          .sd-header-title{
+            font-family: $mont;
+            display: flex;
+            align-items: center;
+            p{
+              margin: 0;
+              text-transform: uppercase;
+              font-size: 1.4rem;
+            }
+          }
+          .sd-arrow{
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            position: absolute;
+            right: 0;
+            background-color: #000;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          #arrow-photography{
+            background-image: url('../images/sec6-arrow-up.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          #arrow-creativity{
+            background-image: url('../images/sec6-arrow-down.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          #arrow-web-design{
+            background-image: url('../images/sec6-arrow-down.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        .sd-description{
+          width: 100%;
+          height: 30rem;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}
+
+#sec7-client-ref{
+  width: 100%;
+  height: 40rem;
+  background-color: green;
 }

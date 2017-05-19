@@ -499,7 +499,7 @@ body {
 
 #sec6-whatwedo {
   width: 100%;
-  height: 40rem;
+  min-height: 40rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -516,12 +516,92 @@ body {
     font-weight: 700;
     margin: 1.8rem 0 3.7rem 0; }
   #sec6-whatwedo .what-desc {
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 7rem 0;
     width: 120rem;
     font-family: "Roboto", sans-serif;
     color: #999999;
     font-size: 1.4rem;
     line-height: 2.4rem;
     text-align: center; }
+  #sec6-whatwedo .service-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem; }
+    #sec6-whatwedo .service-content .service-pic {
+      width: 60rem;
+      margin: 1.6rem;
+      height: 38rem;
+      background-image: url("../images/sec6-image-cut.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
+    #sec6-whatwedo .service-content .service-dropdown {
+      width: 60rem;
+      height: 38rem;
+      background-color: #000;
+      margin: 1.6rem; }
+      #sec6-whatwedo .service-content .service-dropdown #sd-photography {
+        height: 24rem;
+        margin-bottom: 1rem; }
+      #sec6-whatwedo .service-content .service-dropdown #sd-creativity {
+        height: 6rem;
+        margin-bottom: 1rem; }
+      #sec6-whatwedo .service-content .service-dropdown #sd-web-design {
+        height: 6rem; }
+      #sec6-whatwedo .service-content .service-dropdown .sd-dropcont {
+        width: 100%;
+        overflow: hidden;
+        background-color: green; }
+        #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header {
+          width: 100%;
+          height: 6rem;
+          background-color: red;
+          display: flex;
+          flex-direction: row;
+          position: relative; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-logo {
+            width: 6rem;
+            height: 6rem;
+            display: flex; }
+            #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-logo img {
+              margin: auto;
+              display: block; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-header-title {
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            align-items: center; }
+            #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-header-title p {
+              margin: 0;
+              text-transform: uppercase;
+              font-size: 1.4rem; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-arrow {
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            position: absolute;
+            right: 0;
+            background-color: #000; }
+            #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header .sd-arrow:hover {
+              cursor: pointer; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header #arrow-photography {
+            background-image: url("../images/sec6-arrow-up.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header #arrow-creativity {
+            background-image: url("../images/sec6-arrow-down.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+          #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-header #arrow-web-design {
+            background-image: url("../images/sec6-arrow-down.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+        #sec6-whatwedo .service-content .service-dropdown .sd-dropcont .sd-description {
+          width: 100%;
+          height: 30rem;
+          background-color: blue; }
+
+#sec7-client-ref {
+  width: 100%;
+  height: 40rem;
+  background-color: green; }
 
 /*# sourceMappingURL=main.css.map */
