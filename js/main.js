@@ -5,6 +5,7 @@ function initAll() {
   startParallax();
   setNumbers();
   iconAnimating();
+  serviceDropdown();
 }
 
 function setHeight() {
@@ -38,7 +39,22 @@ function iconAnimating() {
 
 }
 
+function serviceDropdown(){
+  $('#sd-photography').addClass('sd-extended');
+  $('.sd-arrow').on('click', function(){
+    if($(this).closest('.sd-dropcont').hasClass('sd-extended')){
+      $(this).css('background-image','url("../images/sec6-arrow-down.png")');
+      $(this).closest('.sd-dropcont').removeClass('sd-extended');
 
+    }else{
+      $('.sd-arrow').css('background-image','url("../images/sec6-arrow-down.png")');
+      $(this).css('background-image','url("../images/sec6-arrow-up.png")');
+      $('.sd-dropcont').removeClass('sd-extended');
+      $(this).closest('.sd-dropcont').addClass('sd-extended');
+
+    }
+  });
+}
 
 //   var numsPos = $('#projects').offset().top - window.innerHeight;
 //   var checkPos = function(){
