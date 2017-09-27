@@ -8,51 +8,61 @@
   <script src="js\jquery-3.1.1.min.js"></script>
   <script src="js\parallax.js"></script>
   <script src="js\jquery.countTo.js"></script>
+  <script src="js\sizeChecker.js"></script>
   <script src="js\main.js"></script>
   <title>MogoRWD</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
   <link rel="stylesheet" href="css\main.css">
   <link rel="stylesheet" href="css\animate.css">
 </head>
 <body>
+  <div id="scroll-back-button">
+    <img src="images\arrow-up.png" alt="arrow">
+  </div>
   <div id="sec1-landing" class="parallax-window" data-parallax="scroll" data-image-src="images/sec1-main-photo.png" data-speed="0.2">
     <div class="sec1-cover">
+      <div id="scroll-down">
+        <a href="#" class="scroll-down-link">
+          <img class="scroll-down-image" src="images\scroll-down.png" alt="scroll-down">
+        </a>
+      </div>
       <nav>
         <p class="nav-logo">MoGo</p>
         <ul class="nav-ul">
           <li>
-            <a href="#">
+            <a href="#" id="2-about" class="navStarter">
               <p>
                 about
               </p>
             <p class="underline"></p>
             </a>
           </li><li>
-            <a href="#">
+            <a href="#" id="4-services" class="navStarter">
               <p>
                 service
               </p>
             <p class="underline"></p>
             </a>
           </li><li>
-            <a href="#">
+            <a href="#" id="10-our-work" class="navStarter">
               <p>
                 work
               </p>
             <p class="underline"></p>
             </a>
           </li><li>
-            <a href="#">
+            <a href="#" id="13-blog" class="navStarter">
               <p>
                 blog
               </p>
             <p class="underline"></p>
             </a>
           </li><li>
-            <a href="#">
+            <a href="#" id="15-footer" class="navStarter">
               <p>
                 contact
               </p>
@@ -67,6 +77,49 @@
             <a href="#">
             <i class="fa fa-search" aria-hidden="true"></i>
             <p class="underline"></p>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger-icon">
+          <div id="nav-icon2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+        </div>
+        <ul class="hamburger-menu">
+          <li>
+            <a href="#" id="2-about" class="navStarter">
+              <p>about</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="4-services" class="navStarter">
+              <p>service</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="10-our-work" class="navStarter">
+              <p>
+                work
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="13-blog" class="navStarter">
+              <p>
+                blog
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="15-footer" class="navStarter">
+              <p>
+                contact
+              </p>
             </a>
           </li>
         </ul>
@@ -113,7 +166,7 @@
           </div>
         </a>
       </div>
-    </div>
+    </>
   </div>
   <div id="sec2-about">
     <p class="top-title">What we do</p>
@@ -166,7 +219,7 @@
       <div class="number-item">
         <div class="item-inside">
           <p class="big-num" id="projects"><span class="timer" data-from="0" data-to="42"
-      data-speed="2000" data-refresh-interval="10"></span></p>
+      data-speed="2000" data-refresh-interval="30"></span></p>
           <p class="inside-desc" id="numbersPosition">web design projects</p>
         </div>
       </div>
@@ -188,8 +241,8 @@
           <p class="inside-desc">award winner</p>
         </div>
       </div>
-      <div class="number-item">
-        <div class="item-inside">
+      <div class="number-item bottom-number bn-left">
+        <div class="item-inside bottom-number">
           <p class="big-num" id="coffee">
             <span class="timer" data-from="0" data-to="99"
       data-speed="2000" data-refresh-interval="30"></span>
@@ -197,8 +250,8 @@
           <p class="inside-desc">cup of coffee</p>
         </div>
       </div>
-      <div class="number-item">
-        <div class="item-inside">
+      <div class="number-item bottom-number">
+        <div class="item-inside bottom-number">
           <p class="big-num" id="members">
             <span class="timer" data-from="0" data-to="24"
       data-speed="2000" data-refresh-interval="30"></span>
@@ -322,12 +375,18 @@
       <p class="top-title">For all devices</p>
       <p class="main-title">unique design</p>
       <img src="images/redline.png" alt="red dividing line" />
-      <div class="tablet-cont">
-        <img src="images/sec5-tablet.png" alt="tablet">
+
+      <div class="devices-photo">
+        <div class="tablet-cont">
+          <img src="images/sec5-tablet.png" alt="tablet">
+        </div>
+        <div class="mobile-cont">
+          <img src="images/sec5-mobile.png" alt="tablet">
+        </div>
+
       </div>
-      <div class="mobile-cont">
-        <img src="images/sec5-mobile.png" alt="tablet">
-      </div>
+
+
     </div>
 
   </div>
@@ -349,6 +408,9 @@
       </div>
       <div class="service-dropdown">
         <div class="sd-dropcont" id="sd-photography">
+
+
+
           <div class="sd-header">
             <div class="sd-logo">
               <img src="images/sec6-icon-pic.png" alt="icon picture">
@@ -356,11 +418,15 @@
             <div class="sd-header-title">
               <p>photography</p>
             </div>
-            <div class="sd-arrow" id="arrow-photography">
+            <div class="sd-arrow arrow-up" id="arrow-photography">
 
             </div>
           </div>
-          <div class="sd-description">
+
+
+
+          <div id="photography-desc" class="sd-description">
+            <div class="lorem-holder">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Maiores animi ipsa provident consectetur itaque recusandae
               consequuntur autem? Est facilis perspiciatis rerum error
@@ -376,8 +442,16 @@
               consequuntur autem? Est facilis perspiciatis rerum error
               repellat unde velit maxime, ea repudiandae dolorum,
               reprehenderit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores animi ipsa provident consectetur itaque recusandae
+                consequuntur autem? Est facilis perspiciatis rerum error
+                repellat unde velit maxime, ea repudiandae dolorum,
+                reprehenderit.</p>
+                </div>
           </div>
-          fnjtribhviut fnjherb bfwjrbjh
+
+
+
         </div>
         <div class="sd-dropcont" id="sd-creativity">
           <div class="sd-header">
@@ -392,7 +466,28 @@
             </div>
           </div>
           <div class="sd-description">
-
+            <div class="lorem-holder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores animi ipsa provident consectetur itaque recusandae
+                consequuntur autem? Est facilis perspiciatis rerum error
+                repellat unde velit maxime, ea repudiandae dolorum,
+                reprehenderit.</p>
+                </div>
           </div>
         </div>
         <div class="sd-dropcont" id="sd-web-design">
@@ -408,15 +503,687 @@
             </div>
           </div>
           <div class="sd-description">
-
+            <div class="lorem-holder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Maiores animi ipsa provident consectetur itaque recusandae
+              consequuntur autem? Est facilis perspiciatis rerum error
+              repellat unde velit maxime, ea repudiandae dolorum,
+              reprehenderit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores animi ipsa provident consectetur itaque recusandae
+                consequuntur autem? Est facilis perspiciatis rerum error
+                repellat unde velit maxime, ea repudiandae dolorum,
+                reprehenderit.</p>
+                </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div id="sec7-client-ref">
+    <div class="customers-slider-box">
+      <div id="previous-slide" class="move-slider">
+        <img src="images\sec7-arrowL.png" alt="arrow left">
+      </div>
 
+      <div class="customers-slider">
+        <ul>
+          <li id="slide1">
+            <div class="cs-message-icon">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jon Doe</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide2">
+            <div class="cs-message-icon">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jon Doe</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide3">
+            <div class="cs-message-icon">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jon Doe</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide4">
+            <div class="cs-message-icon">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jon Doe</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="next-slide" class="move-slider">
+        <img src="images\sec7-arrowR.png" alt="arrow right">
+      </div>
+    </div>
   </div>
+  <div id="sec8-our-team">
+    <p class="top-title">Who we are</p>
+    <p class="main-title">meet our team</p>
+    <img src="images/redline.png" alt="red dividing line" />
+    <p class="what-desc">
+      Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Tenetur maxime
+        nobis totam consequuntur, odio voluptates maiores eius.
+        Rem molestiae vel debitis, laboriosam perspiciatis cumque,
+        rerum corporis animi temporibus, accusamus illum.
+        Alias voluptatum nam soluta id, quidem non adipisci nobis.
+    </p>
+    <div class="team-photos">
+      <div class="photo-box">
+        <div class="photo-cont">
+          <a href="#" class="team-photo-item t-item1">
+            <div class="photo-social-box">
+              <div class="social-inside-box">
+                <div class="social-item item-one">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-two">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-three">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-four">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="photo-cover">
 
+            </div>
+
+
+          </a>
+        </div>
+        <p class="photo-name">
+          matthew dix
+        </p>
+        <p class="photo-job">
+          Graphic design
+        </p>
+      </div>
+      <div class="photo-box">
+        <div class="photo-cont">
+          <a href="#" class="team-photo-item t-item2">
+            <div class="photo-social-box">
+              <div class="social-inside-box">
+                <div class="social-item item-one">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-two">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-three">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-four">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="photo-cover">
+            </div>
+
+
+          </a>
+        </div>
+        <p class="photo-name">
+          christopher campbell
+        </p>
+        <p class="photo-job">
+          Branding/UX design
+        </p>
+      </div>
+      <div class="photo-box">
+        <div class="photo-cont">
+          <a href="#" class="team-photo-item t-item3">
+            <div class="photo-social-box">
+              <div class="social-inside-box">
+                <div class="social-item item-one">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-two">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-three">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </div>
+                <div class="social-item item-four">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="photo-cover">
+            </div>
+
+
+          </a>
+        </div>
+        <p class="photo-name">
+          michael fertig
+        </p>
+        <p class="photo-job">
+          Developer
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="sec9-hipster-logos">
+    <div class="logos-box">
+      <img src="images\sec9-logo1.png" alt="logo1">
+      <img src="images\sec9-logo2.png" alt="logo2">
+      <img src="images\sec9-logo3.png" alt="logo3">
+      <img src="images\sec9-logo4.png" alt="logo4">
+      <img src="images\sec9-logo5.png" alt="logo5">
+      <img src="images\sec9-logo6.png" alt="logo6">
+    </div>
+  </div>
+  <div id="sec10-our-work">
+    <p class="top-title">What we do</p>
+    <p class="main-title">some of our work</p>
+    <img src="images/redline.png" alt="red dividing line" />
+    <p class="what-desc">
+      Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Tenetur maxime
+        nobis totam consequuntur, odio voluptates maiores eius.
+        Rem molestiae vel debitis, laboriosam perspiciatis cumque,
+        rerum corporis animi temporibus, accusamus illum.
+        Alias voluptatum nam soluta id, quidem non adipisci nobis.
+    </p>
+    <div class="projects-box">
+      <div class="pro-inner-box">
+        <div class="pro-column pro-cont" id="pro-box1">
+          <div class="pro-box-flylink">
+            <div class="flylink-content">
+              <div class="flylink-hand"></div>
+              <p class="flylink-title flylink1">deep blue</p>
+              <p class="flylink-sub flysub7">Check out this project</p>
+            </div>
+          </div>
+          <div class="pro-cover"></div>
+        </div>
+        <div class="pro-column">
+          <div class="pro-box pro-cont" id="pro-box2">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink2">beyond the outline</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+          <div class="pro-box pro-cont pro-cont" id="pro-box3">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink3">sky is the limit</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pro-inner-box">
+        <div class="pro-column">
+          <div class="pro-box pro-cont" id="pro-box4">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink4">art of building</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+          <div class="pro-box pro-cont" id="pro-box5">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink5">reach higher</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+        </div>
+        <div class="pro-column">
+          <div class="pro-box pro-cont" id="pro-box6">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink6">the one way</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+          <div class="pro-box pro-cont" id="pro-box7">
+            <div class="pro-box-flylink">
+              <div class="flylink-content">
+                <div class="flylink-hand"></div>
+                <p class="flylink-title flylink7">man on water</p>
+                <p class="flylink-sub flysub7">Check out this project</p>
+              </div>
+            </div>
+            <div class="pro-cover"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sec11-our-ref">
+    <div class="customers-slider-box">
+      <div id="previous-slide2" class="move-slider">
+        <img src="images\sec7-arrowL.png" alt="arrow left">
+      </div>
+
+      <div class="customers-slider2">
+        <ul>
+          <li id="slide1">
+            <div class="cs-message-photo">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jake Dougy</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide2">
+            <div class="cs-message-photo">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jake Dougy</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide3">
+            <div class="cs-message-photo">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jake Dougy</p>
+              </div>
+            </div>
+          </li>
+          <li id="slide4">
+            <div class="cs-message-photo">
+
+            </div>
+            <div class="cs-message">
+              <q class="quoute">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation."
+              </q>
+              <div class="sd-author">
+                <img src="images/redline.png" alt="red dividing line" />
+                <p>Jake Dougy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="next-slide2" class="move-slider">
+        <img src="images\sec7-arrowR.png" alt="arrow right">
+      </div>
+    </div>
+  </div>
+  <div id="sec12-happy-clients">
+    <div class="hc-cover">
+      <p class="top-title">Happy Clients</p>
+      <p class="main-title">what people say</p>
+      <img src="images/redline.png" alt="red dividing line" />
+      <div class="happy-clients-box">
+        <div class="happy-clients-div">
+          <div class="happy-clients-item">
+            <div class="hci-photo hci-p1"></div>
+            <div class="hci-description">
+              <p class="hci-name">matthew dix</p>
+              <p class="hci-job">Graphic Design</p>
+              <img src="images/redline.png" alt="red dividing line" />
+              <p class="hci-opinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+          </div>
+          <div class="happy-clients-item">
+            <div class="hci-photo hci-p2"></div>
+            <div class="hci-description">
+              <p class="hci-name">jaelynn castillo</p>
+              <p class="hci-job">Graphic Design</p>
+              <img src="images/redline.png" alt="red dividing line" />
+              <p class="hci-opinion">Ipsum dolor sit amet, consectetur adipiscing elit, sed do euismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="happy-clients-div">
+          <div class="happy-clients-item">
+            <div class="hci-photo hci-p3"></div>
+            <div class="hci-description">
+              <p class="hci-name">nick karvounis</p>
+              <p class="hci-job">Graphic Design</p>
+              <img src="images/redline.png" alt="red dividing line" />
+              <p class="hci-opinion">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+          </div>
+          <div class="happy-clients-item">
+            <div class="hci-photo hci-p4"></div>
+            <div class="hci-description">
+              <p class="hci-name">mike petrucci</p>
+              <p class="hci-job">Graphic Design</p>
+              <img src="images/redline.png" alt="red dividing line" />
+              <p class="hci-opinion">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sec13-blog">
+    <p class="top-title">Our stories</p>
+    <p class="main-title">latest blog</p>
+    <img src="images/redline.png" alt="red dividing line" />
+    <div class="blog-box">
+      <div class="blog-box-item">
+        <div class="blog-date">
+          <p class="blog-date-day">15</p>
+          <p class="blog-date-month">Jan</p>
+        </div>
+        <div class="blog-box-photo blog-photo1">
+          <div class="blog-cover"></div>
+          <p class="blog-watch">watch this post</p>
+        </div>
+        <p class="blog-box-title">
+          lorem ipsum dolor sit amet
+        </p>
+        <p class="blog-box-desc">
+          Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="blog-box-numbers">
+          <img class="blog-eye" src="images\sec13-view.png" alt="eye">
+          <div class="be-number-cont">
+            <p class="blog-eye-number">542</p>
+          </div>
+          <img src="images\sec13-bubble.png" alt="bubble" class="blog-bubble">
+          <p class="bubble-number">17</p>
+        </div>
+      </div>
+      <div class="blog-box-item">
+        <div class="blog-date">
+          <p class="blog-date-day">14</p>
+          <p class="blog-date-month">Jan</p>
+        </div>
+        <div class="blog-box-photo blog-photo2">
+          <div class="blog-cover"></div>
+          <p class="blog-watch">watch this post</p>
+        </div>
+        <p class="blog-box-title">
+          sed do eiusmod tempor
+        </p>
+        <p class="blog-box-desc">
+          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="blog-box-numbers">
+          <img class="blog-eye" src="images\sec13-view.png" alt="eye">
+          <div class="be-number-cont">
+            <p class="blog-eye-number">992</p>
+          </div>
+          <img src="images\sec13-bubble.png" alt="bubble" class="blog-bubble">
+          <p class="bubble-number">42</p>
+        </div>
+      </div>
+      <div class="blog-box-item">
+        <div class="blog-date">
+          <p class="blog-date-day">12</p>
+          <p class="blog-date-month">Jan</p>
+        </div>
+        <div class="blog-box-photo blog-photo3">
+          <div class="blog-cover"></div>
+          <p class="blog-watch">watch this post</p>
+        </div>
+        <p class="blog-box-title">
+          incididunt ut labore et dolore
+        </p>
+        <p class="blog-box-desc">
+          Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="blog-box-numbers">
+          <img class="blog-eye" src="images\sec13-view.png" alt="eye">
+          <div class="be-number-cont">
+            <p class="blog-eye-number">1560</p>
+          </div>
+          <img src="images\sec13-bubble.png" alt="bubble" class="blog-bubble">
+          <p class="bubble-number">98</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sec14-map">
+    <div class="map-cover">
+      <div class="map-box">
+        <a href="#">
+          <img src="images/sec14-pin.png" alt="pin" class="map-image animated">
+          <p class="map-link">open map</p>
+          <img src="images/redline.png" alt="red dividing line" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer id="sec15-footer">
+      <div class="top-footer">
+
+
+        <div class="top-footer-item footer-item1">
+          <div class="footer-item1-part1">
+            <p class="footer-mogo-logo">MoGo</p>
+            <p class="footer-parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="footer-item1-part2">
+            <p class="footer-follow"><span>15k </span>followers</p>
+            <div class="footer-socials-box">
+              <p class="follow-us">Follow Us:</p>
+              <a href="#">
+                <img src="images\sec15-icons-facebook.png" alt="facebook logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-twitter.png" alt="twitter logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-instagram.png" alt="instagram logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-pinterest.png" alt="pinterest logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-googleplus.png" alt="google plus logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-youtube.png" alt="youtube logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-dribble.png" alt="dribble logo" class="social-logo">
+              </a>
+              <a href="#">
+                <img src="images\sec15-icons-tumbler.png" alt="tumbler logo" class="social-logo">
+              </a>
+            </div>
+            <div class="subscribe-cont">
+              <input class="sub-field" type="text" placeholder="Your Email...">
+              <div class="sub-button">
+                <p>subscribe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-items-2and3">
+          <div class="top-footer-item footer-item2">
+            <p class="item-title">
+              blogs
+            </p>
+            <div class="blog-item">
+              <div class="blog-item-photo bip1">
+                &nbsp;
+              </div>
+              <div class="blog-item-desc">
+                <p class="bid-top">
+                  lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+                <p class="bid-date">Jan 9, 2016</p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-photo bip2">
+
+              </div>
+              <div class="blog-item-desc">
+                <p class="bid-top">
+                  consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <p class="bid-date">Jan 9, 2016</p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-photo bip3">
+
+              </div>
+              <div class="blog-item-desc">
+                <p class="bid-top">
+                  sed do eiusmod tempor incididunt ut labore
+                </p>
+                <p class="bid-date">Jan 9, 2016</p>
+              </div>
+            </div>
+          </div>
+          <div class="top-footer-item footer-item3">
+            <p class="item-title">
+              instagram
+            </p>
+            <div class="insta-photo-box">
+              <div class="insta-photo-row">
+                <div class="insta-photo-item ipi1">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi2">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi3">
+                  <div class="insta-cover"></div>
+                </div>
+              </div>
+              <div class="insta-photo-row">
+                <div class="insta-photo-item ipi4">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi5">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi6">
+                  <div class="insta-cover"></div>
+                </div>
+              </div>
+              <div class="insta-photo-row">
+                <div class="insta-photo-item ipi7">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi8">
+                  <div class="insta-cover"></div>
+                </div>
+                <div class="insta-photo-item ipi9">
+                  <div class="insta-cover"></div>
+                </div>
+              </div>
+            </div>
+            <a class="more-photos" href="#">
+              <p>View more photos</p>
+            </a>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="bottom-footer">
+        <p>&copy; 2016 MoGo free PSD template by <span>Laaqiq</span> developed by <span>Adam Reszka</span></p>
+      </div>
+  </footer>
 </body>
 </html>
